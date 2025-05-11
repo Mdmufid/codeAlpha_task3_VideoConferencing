@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Conferencing App</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>Welcome to Video Chat</h1>
+  <div>
+    <input id="roomIdInput" type="text" placeholder="Enter Room ID" />
+    <button id="joinBtn">Join Room</button>
+    <button id="createBtn">Create Room</button>
+  </div>
+
+  <script>
+    const input = document.getElementById('roomIdInput');
+    document.getElementById('joinBtn').onclick = () => {
+      const id = input.value.trim();
+      if (id) window.location.href = `/room.html?roomId=${id}`;
+      else alert('Please enter a Room ID to join.');
+    };
+    document.getElementById('createBtn').onclick = () => {
+      const id = Math.random().toString(36).substring(2, 8);
+      window.location.href = `/room.html?roomId=${id}`;
+    };
+  </script>
+</body>
+</html>

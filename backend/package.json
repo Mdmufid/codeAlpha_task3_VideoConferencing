@@ -1,0 +1,17 @@
+{
+  "name": "video-conferencing-app-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "socket.io": "^4.7.0",
+    "jsonwebtoken": "^9.0.0",
+    "express-fileupload": "^1.5.1"
+
+  }
+}
+

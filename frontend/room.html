@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Conferencing Room</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Video Conferencing Room</h1>
+      <p id="roomDisplay">Room: default-room</p>
+    </header>
+
+    <main class="video-section">
+      <video id="localVideo" autoplay muted></video>
+      <video id="remoteVideo" autoplay></video>
+    </main>
+
+    <section class="controls">
+      <button id="startScreenShare">Share Screen</button>
+      <button id="startWhiteboard">Open Whiteboard</button>
+      <button id="endCall">End Call</button>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 YourApp | Secure & Encrypted</p>
+    </footer>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/socket.js"></script>
+  <script src="/js/webrtc.js"></script>
+</body>
+</html>

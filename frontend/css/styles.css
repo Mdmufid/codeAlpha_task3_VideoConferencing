@@ -1,0 +1,91 @@
+/* === Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Global Styles === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #121212;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* === Container === */
+.container {
+  max-width: 1200px;
+  width: 90%;
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #00bcd4;
+}
+
+#roomDisplay {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #ccc;
+}
+
+/* === Video Section === */
+.video-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+video {
+  width: 48%;
+  border-radius: 10px;
+  background: black;
+  border: 2px solid #00bcd4;
+}
+
+/* === Controls === */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background: #00bcd4;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controls button:hover {
+  background: #0097a7;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #888;
+  font-size: 0.9rem;
+}
